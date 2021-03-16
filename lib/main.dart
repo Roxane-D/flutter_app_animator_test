@@ -29,11 +29,12 @@ class AnimatedLogo extends StatelessWidget {
     return Animator<double>(
       tween: Tween<double>(begin: 0, end: 200),
       cycles: 0,
-      duration: Duration(seconds: 2),
-      builder: (context, animatorState, child) => Container(
-        height: animatorState.value,
-        width: animatorState.value,
-        child: FlutterLogo(),
+      duration: Duration(seconds: 1),
+      builder: (context, animatorState, child) => Opacity(
+        opacity: animatorState.value / 1000,
+        child: FlutterLogo(
+          size: 200,
+        ),
       ),
     );
   }
