@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.0
   animator: ^2.0.1
   animate_do: ^1.7.3
+  delayed_display: ^1.0.3
+  sleek_circular_slider: ^1.2.0
 
 dev_dependencies:
   flutter_test:
